@@ -1,4 +1,4 @@
-import mongoose, { Schema, model, models } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const UserSchema = new Schema({
   clerkId: {
@@ -32,7 +32,7 @@ const UserSchema = new Schema({
   },
   creditBalance: {
     type: Number,
-    default: 20,
+    default: 10,
   },
 });
 
