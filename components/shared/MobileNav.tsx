@@ -23,7 +23,7 @@ const MobileNav = () => {
         <Image
           src="/assets/images/pixel_pro_logo.svg"
           alt="logo"
-          width={180}
+          width={160}
           height={28}
         />
       </Link>
