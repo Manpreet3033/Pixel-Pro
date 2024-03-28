@@ -1,14 +1,15 @@
+import { url } from "inspector";
 import { Document, Schema, model, models } from "mongoose";
 
 export interface IImage extends Document {
   title: string;
   transformation: string;
   publicId: string;
-  secureUrl: string;
+  secureURL: string;
   width?: number;
   height?: number;
   config?: object;
-  transformationUrl?: string;
+  transformationURL?: string;
   aspectRatio?: string;
   color?: string;
   prompt?: string;
@@ -34,8 +35,8 @@ const ImageSchema = new Schema({
     type: String,
     required: true,
   },
-  secureUrl: {
-    type: URL,
+  secureURL: {
+    type: String,
     required: true,
   },
   width: {
@@ -47,8 +48,8 @@ const ImageSchema = new Schema({
   config: {
     type: Object,
   },
-  transformationUrl: {
-    type: URL,
+  transformationURL: {
+    type: String,
   },
   aspectRatio: {
     type: String,
