@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import { Document, Schema, model, models } from "mongoose";
 
 export interface IImage extends Document {
