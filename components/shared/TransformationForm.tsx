@@ -294,7 +294,7 @@ const TransformationForm = ({
           </div>
         )}
 
-        <div className="media-uploader-field">
+        <div className="media-uploader-field over">
           <CustomField
             control={form.control}
             name="publicId"
